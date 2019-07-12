@@ -1,3 +1,5 @@
+####################   德一智慧城市Podfile模板   ####################
+
 source 'https://github.com/CocoaPods/Specs.git'
 source 'http://192.168.120.208/iOS_Group/DYSpecs.git'
 
@@ -8,7 +10,15 @@ platform :ios, '10.0'
 target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'
 
+
+
   pod 'DYNetwork'
+  pod 'DYService'
+  pod 'DYSuperKit', '~>0.3'
+  pod 'DYFoundation'
+
+
+
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths

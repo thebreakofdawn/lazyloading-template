@@ -14,7 +14,7 @@ target '${POD_NAME}_Example' do
 
   pod 'DYNetwork'
   pod 'DYService'
-  pod 'DYSuperKit', '~>0.3'
+  #pod 'DYSuperKit', '~>0.3'
   pod 'DYFoundation'
 
 

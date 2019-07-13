@@ -12,11 +12,11 @@ target '${POD_NAME}_Example' do
 
 
 
-  pod 'DYNetwork'
-  pod 'DYService'
-  #pod 'DYSuperKit', '~>0.3'
-  pod 'DYFoundation'
-
+  pod 'DYNetwork', :git => 'http://192.168.120.208/iOS_Group/DYNetwork.git'
+  pod 'DYService', :git => 'http://192.168.120.208/iOS_Group/DYService.git'
+  pod 'DYSuperKit', :git => 'http://192.168.120.208/iOS_Group/DYKit.git'
+  pod 'DYFoundation', :git => 'http://192.168.120.208/iOS_Group/DYFoundation.git'
+  pod 'DYResources', :git => 'http://192.168.120.208/iOS_Group/DYResources.git'
 
 
 

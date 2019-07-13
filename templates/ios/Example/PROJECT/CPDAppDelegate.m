@@ -7,6 +7,8 @@
 //
 
 #import "CPDAppDelegate.h"
+#import <DYSuperKit/DYKit.h>
+#import "CPDViewController.h"
 
 @implementation CPDAppDelegate
 
@@ -14,7 +16,12 @@
 {
     // Override point for customization after application launch.
     
-    NSLog(@"123");
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    CPDViewController *friendsVC = [[CPDViewController alloc]init];
+    DYNavigationController *friendsNav = [[DYNavigationController alloc]initWithRootViewController:friendsVC];
+    self.window.rootViewController = friendsNav;
+    self.window.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

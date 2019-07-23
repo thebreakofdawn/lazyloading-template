@@ -4,7 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'http://git.zhcs.com/iOS_Group/DYSpecs.git'
 
 use_frameworks!
-git.zhcs.com
+
 platform :ios, '10.0'
 
 target '${POD_NAME}_Example' do

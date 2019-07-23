@@ -1,10 +1,10 @@
 ####################   德一智慧城市Podfile模板   ####################
 
 source 'https://github.com/CocoaPods/Specs.git'
-source 'http://192.168.120.208/iOS_Group/DYSpecs.git'
+source 'http://git.zhcs.com/iOS_Group/DYSpecs.git'
 
 use_frameworks!
-
+git.zhcs.com
 platform :ios, '10.0'
 
 target '${POD_NAME}_Example' do

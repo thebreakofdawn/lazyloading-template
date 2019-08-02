@@ -11,14 +11,16 @@ target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'
 
 
-
+  pod 'IQKeyboardManager'
   pod 'DYNetwork', :git => 'http://git.zhcs.com/iOS_Group/DYNetwork.git'
   pod 'DYService', :git => 'http://git.zhcs.com/iOS_Group/DYService.git'
   pod 'DYSuperKit', :git => 'http://git.zhcs.com/iOS_Group/DYKit.git'
   pod 'DYFoundation', :git => 'http://git.zhcs.com/iOS_Group/DYFoundation.git'
   pod 'DYResources', :git => 'http://git.zhcs.com/iOS_Group/DYResources.git'
+#pod 'DYPay', :git => 'http://git.zhcs.com/iOS_Group/DYPay.git'
 
-
+#pod 'YYText'
+#pod 'MJRefresh'
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths

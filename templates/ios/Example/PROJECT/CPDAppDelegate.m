@@ -8,6 +8,7 @@
 
 #import "CPDAppDelegate.h"
 #import <DYSuperKit/DYKit.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 #import "CPDViewController.h"
 
 @implementation CPDAppDelegate
@@ -15,6 +16,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.shouldResignOnTouchOutside = YES;
+    
+    DYViewControllerIntercepter *vc = [DYViewControllerIntercepter new];
+    vc.enableVCDeallocLog = YES;
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     CPDViewController *friendsVC = [[CPDViewController alloc]init];

@@ -9,11 +9,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'http://192.168.120.208/iOS_Group/${POD_NAME}'
+  s.homepage         = 'http://git.zhcs.com/iOS_Group/${POD_NAME}'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '${USER_NAME}' => '${USER_EMAIL}' }
-  s.source           = { :git => 'http://192.168.120.208/iOS_Group/${POD_NAME}.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://git.zhcs.com/iOS_Group/${POD_NAME}.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -30,5 +30,12 @@ TODO: Add long description of the pod here.
 
 
  s.dependency 'Masonry'
+ s.dependency 'DYSuperKit'
+ s.dependency 'DYFoundation'
+ s.dependency 'DYNetwork'
+ s.dependency 'DZNEmptyDataSet'
+ #s.dependency 'YYText'
+
+
 
 end
